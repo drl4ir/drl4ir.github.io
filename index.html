@@ -1,1 +1,554 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>DRL4IR @ SIGIR2021</title>
 
+    <!-- favicon 
+    <link href="favicon.png" rel=icon>-->
+
+    <!-- web-fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:210,300,400,700,500' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Style CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --> 
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar">
+<div id="main-wrapper">
+    <!-- Page Preloader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="status-mes"></div>
+        </div>
+    </div>
+
+    <header class="header">
+        <!-- Navigation -->
+        <nav class="navbar main-menu" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!--<a class="navbar-brand page-scroll" href="#page-top"><img src="img/logo.png" alt=""></a>-->
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li class="hidden"><a href="#page-top"></a></li>
+                        <li><a class="page-scroll" href="#section-intro">Intro</a></li>
+			<!--<li><a class="page-scroll" href="#section-cfp">CFP</a></li>
+			<li><a class="page-scroll" href="#section-date">DATES</a></li>-->
+                        <li><a class="page-scroll" href="#section-ajenda">Program</a></li>
+                        <!--<li><a class="page-scroll" href="#section-speaker">Speakers</a></li>
+                        <li><a class="page-scroll" href="#section-papers">Accepted Papers</a></li>-->
+                        <li><a class="page-scroll" href="#section-organizer">Organizer</a></li>
+			<!--<li><a class="page-scroll" href="#section-sponsor">Sponsor</a></li>-->
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+        <!-- .nav -->
+
+    </header>
+
+    <div class="jumbotron text-center">
+        <div class="content">
+            <h1>DRL4IR: The 2nd Workshop on Deep Reinforcement Learning for Information Retrieval at SIGIR'21</h1>
+            <!--<div class="event-date">August 5 (1:00-5:00PM), 2019</div> 8:30 - 11:30, -->
+	    <h2 style="color:#FFFFFF;"><b>July 15 - 16, 2021</b></h2>
+	    <!--<h2 style="color:#0F1555;"><b><a href="https://www.bilibili.com/video/BV1za4y1J7sS/">Video</a></b></h2>-->
+	    <h2 style="color:#0F1555;"><b><a href="https://zoom.us/j/98954642568?pwd=MFl2WTFLN01scDhLUVU3TVdSVDQydz09">Zoom Link</a></b></h2>
+	    <h3 style="color:#0F1555;"><b><a href="https://msu.zoom.us/j/94186952492">Zoom Link (backup)</a></b></h3>
+        </div>
+    </div>
+    
+    
+    
+    <!-- Introduction Section -->
+    <section id="section-intro" class="section-wrapper about-event">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1>INTRO</h1>
+                </div>
+            </div>
+            <div class="row text-justify">
+                <div class="col-md-12">
+                    <p class="large text-muted">
+                        Information retrieval (IR) techniques, such as search, recommendation and online advertising, satisfying users’ information needs by suggesting users personalized objects (information or services) at the appropriate time and place, play a crucial role in mitigating the information overload problem. Since the widely use of mobile applications, more and more information retrieval services have provided interactive functionality and products. Thus, learning from interaction becomes a crucial machine learning paradigm for interactive IR, which is based on reinforcement learning. With recent great advances in deep reinforcement learning (DRL), there have been increasing interests in developing DRL based information retrieval techniques, which could continuously update the information retrieval strategies according to users’ real-time feedback, and optimize the expected cumulative long-term satisfaction from users.
+                    </p>
+		    <p class="large text-muted">
+                        Our workshop is a full-day workshop DRL4IR at SIGIR 2021, with the aim to provide a venue, which can bring together academia researchers and industry practitioners (i) to discuss the principles, limitations and applications of DRL for information retrieval, and (ii) to foster research on innovative algorithms, novel techniques, and new applications of DRL to information retrieval.
+                    </p>
+		
+                </div>
+            </div>
+        </div>
+    </section>
+  
+    
+    
+    <!--<section id="section-cfp" class="section-wrapper pricing-section gray-bg">
+        <div class="container">
+        	<div class="row">
+                <div class="col-md-12">
+                    <h1 class="section-title">CALL FOR PAPER</h1>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12">
+                	<p class="large text-muted">
+			In this workshop, we invite professionals, researchers and technologists of all relevant fields to present the state-of-the-art development and applications, share their envisions about the future of information retrieval with decision making techniques like deep reinforcement learning. </p>
+                    
+                    	<p class="large text-muted">
+                        We encourage submissions on a broad range of DRL for knowledge discovery in various domains. Topics of interest include but are not limited to theoretical aspects, algorithms, methods, applications, and systems, such as:</p>
+               
+			<p class="large text-muted">
+				<li>Deep reinforcement learning (DRL) methods in information retrieval scenarios</li>
+				<li>DRL for recommender systems</li>
+				<li>DRL for online advertising</li>
+				<li>DRL for query expansion and/or reformulation</li>
+				<li>DRL for ranking</li>
+				<li>DRL for item sampling in traning</li>
+				<li>DRL in social networks &amp; graph mining</li>
+			</p>	
+			
+			<p class="large text-muted">
+				
+				This year we encourage all kinds of papers for submission, including the original and published ones. For the original papers, the authors are free to further submit to any other venues. We invite the submission of full research papers (6~10 pages) and short papers (2~4 pages). The accepted papers will be put onto the workshop website. We encourage the authors of accepted papers to put their papers onto arxiv and we will link to the arxiv URLs.
+			
+				
+				Papers must be in English, in PDF format, and in the current ACM two-column conference format. Suitable LaTeX, Word, and <a href="https://www.overleaf.com/gallery/tagged/acm-official"><b>Overleaf</b></a> templates are available from the <a href="https://www.acm.org/publications/proceedings-template"><b>ACM Website</b></a> (use the sigconf proceedings template). We will follow a single-blind process and submissions will be evaluated by the program committee based on the quality of the work and its fit to the workshop themes. All the papers are required to be submitted via <a href="https://easychair.org/my/conference?conf=drl4ir0"><b>EasyChair</b></a> system. All questions about submissions should be emailed to wnzhang [at] sjtu.edu.cn or zhaoxi35 [at] msu.edu.</p>
+			
+		</div>
+            </div>
+        </div>
+
+    </section>-->
+    	
+	
+	
+    <!--<section id="section-date" class="section-wrapper about-event">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1>IMPORTANT DATES</h1>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-2 text-left">
+            </div>
+              
+            <div class="col-lg-10 text-left">
+                <div class="col-md-12">
+                    <p class="large text-muted">
+                      <b>Jun 7, 2021: </b>  Workshop paper submission due (23:59, AoE Time)
+                    </p>
+                    <p class="large text-muted">
+                      <b>Jun 19, 2021: </b> <span class="text-muted"> Workshop paper acceptance notifications </span>
+                    </p>
+                    <p class="large text-muted">
+                      <b>Jun 27, 2021:</b> <span class="text-muted"> Camera-ready deadline for workshop papers </span>
+                    </p>
+                    <p class="large text-muted">
+                      <b>July 15, 2021:</b> Workshop Day
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>-->		    
+				        
+    <section id="section-ajenda" class="section-wrapper section-ajenda gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h1>PROGRAM</h1>
+			<!--<h2 style="color:#0F1555;"><b><a href="https://www.bilibili.com/video/BV1za4y1J7sS/">Video</a></b></h2>-->
+			<h2 style="color:#0F1555;">Session 1 (Jul 15, 2021)</h2>
+			<h3 style="color:#0F1555;"><b><a href="https://zoom.us/j/98954642568?pwd=MFl2WTFLN01scDhLUVU3TVdSVDQydz09">Zoom Link</a></b></h3>
+			<h4 style="color:#0F1555;"><b><a href="https://msu.zoom.us/j/94186952492">Zoom Link (backup)</a></b></h4>
+			<h4 style="color:#0F1555;">5:00am-8:00am, LA time &nbsp;&nbsp;&nbsp;&nbsp;8:00am-11:00am, New York Time</h4>
+			<h4 style="color:#0F1555;">1:00pm-4:00pm, London Time &nbsp;&nbsp;&nbsp;&nbsp; 8:00pm-11:00pm, Beijing Time</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+            
+            <div class="col-lg-12 text-left">
+                <div class="col-md-12">
+                    <p class="large text-muted">
+                      <li><b>[Openning for the 1st Session]</b></li>
+		      <li>Weinan Zhang (Shanghai Jiao Tong University)</li>
+                    </p>
+			
+                    <p class="large text-muted">
+                      <li><b>[Keynote 1] Online Learning to Rank with Click Models: An Overview</b> <a href="slides/shuai-li-OLTR.pdf">[Slides]</a> </li>
+                      <li>Shuai Li (Shanghai Jiao Tong University)</li>
+                    </p>
+			
+                    <p class="large text-muted">
+                      <li><b>[Invited Talk 1] Offline reinforcement learning for recommendation</b> <a href="slides/xin-xin-offlinerl.pdf">[Slides]</a> </li>
+                      <li>Xin Xin (University of Glasgow)</li>
+                    </p>
+			
+			
+		    <p class="large text-muted">
+                      <li><b>[Paper Talk 1] Hierarchical Reinforcement Learning for Aggregated Search</b> <a href="paper1.pdf">[PDF]</a> <a href="slides/yin-zhang-HRL.pdf">[Slides]</a> </li>
+                      <li>Pu Yang and Yin Zhang (Zhejiang University)</li>
+                    </p>
+			
+		    <p class="large text-muted">
+                      <li><b>[Paper Talk 2] Hierarchical Multi-Agent Reinforcement Learning for Allocating Guaranteed Display Ads</b> <a href="paper2.pdf">[PDF]</a> <a href="slides/lu-wang-hmarl.pdf">[Slides]</a> </li>
+                      <li>Lu Wang, Lei Han, Wei Zhang, Xinru Chen, Chengchang Li, Weinan Zhang, Xiaofeng He and Dijun Luo (East China Normal University, Tencent and SJTU) </li>
+                    </p>
+			
+		    <p class="large text-muted">
+                      <li><b>[Invited Talk 2] Towards More Realistic User Long Term Engagement Modeling in Recommender Systems</b> <a href="slides/xu-chen-user-model.pdf">[Slides]</a> </li>
+                      <li>Xu Chen (Renmin University)</li>
+                    </p>
+			
+		    <p class="large text-muted">
+                      <li><b>[Paper Talk 3] Imitation from Learning-based Oracle for Universal Order Execution in Quantitative Finance</b> <a href="paper3.pdf">[PDF]</a>  <a href="slides/yuchen-fang-ilo.pdf">[Slides]</a> </li>
+                      <li>Yuchen Fang, Kan Ren, Weiqing Liu, Dong Zhou, Weinan Zhang and Yong Yu (SJTU and MSRA)</li>
+                    </p>		
+                </div>
+            </div>
+		    
+	    <br><br><br><br>
+		    
+		    
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+			<!--<h2 style="color:#0F1555;"><b><a href="https://www.bilibili.com/video/BV1za4y1J7sS/">Video</a></b></h2>-->
+			<h2 style="color:#0F1555;">Session 2 (Jul 15 or 16, 2021)</h2>
+			<h3 style="color:#0F1555;"><b><a href="https://zoom.us/j/98954642568?pwd=MFl2WTFLN01scDhLUVU3TVdSVDQydz09">Zoom Link</a></b></h3>
+			<h4 style="color:#0F1555;"><b><a href="https://msu.zoom.us/j/94186952492">Zoom Link (backup)</a></b></h4>
+			<h4 style="color:#0F1555;">5:00pm-8:00pm (15 Jul), LA time &nbsp;&nbsp;&nbsp;&nbsp; 8:00pm-11:00pm (15 Jul), New York Time</h4>
+			<h4 style="color:#0F1555;">1:00am-4:00am (16 Jul), London Time &nbsp;&nbsp;&nbsp;&nbsp; 8:00am-11:00am (16 Jul), Beijing Time</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+            
+            <div class="col-lg-12 text-left">
+                <div class="col-md-12">
+                    <p class="large text-muted">
+                      <li><b>[Review and Openning for the 2nd Session]</b></li>
+		      <li>Grace Hui Yang (Goergetown University)</li>
+                    </p>
+			
+		    <p class="large text-muted">
+                      <li><b>[Invited Talk 3] Information Retrieval and AI</b>  </li>
+                      <li>Grace Yang (Goergetown University)</li>
+                    </p>
+			
+                    <p class="large text-muted">
+                      <li><b>[Keynote 2] Off-policy Evaluation and Learning for Interactive Systems</b> <a href="slides/yi-su-ope.pdf">[Slides]</a> </li>
+                      <li>Yi Su (Cornell University)</li>
+                    </p>
+			
+		    <p class="large text-muted">
+                      <li><b>[Paper Talk 4] DeepQAMVS: Query-Aware Hierarchical Pointer Networks for Multi-Video Summarization</b> <a href="paper4.pdf">[PDF]</a> <a href="slides/safa-DeepQAMVS.pdf">[Slides]</a>  </li>
+                      <li>Safa Messaoud, Ismini Lourentzou, Assma Boughoula, Mona Zehni, Zhizhen Zhao, Chengxiang Zhai and Alexander Schwing (UIUC)</li>
+                    </p>
+			
+		    <p class="large text-muted">
+                      <li><b>[Invited Talk 4] Ranking Policy Gradient</b> <a href="slides/kaixiang-lin-rpg.pdf">[Slides]</a>  </li>
+                      <li>Kaixiang Lin (Michigan State University)</li>
+                    </p>
+			
+		    <p class="large text-muted">
+                      <li><b>[Paper Talk 5] Balancing Accuracy and Fairness for Interactive Recommendation with Reinforcement Learning</b> <a href="paper5.pdf">[PDF]</a> <a href="slides/weiwen-liu-fairrec.pdf">[Slides]</a>  </li>
+                      <li>Weiwen Liu and Ruiming Tang (Huawei Noah's Ark Lab)</li>
+                    </p>
+			
+		    <p class="large text-muted">
+                      <li><b>[Invited Talk 5] Model-based Reinforcement Learning and its Potential Use in IR</b> <a href="slides/weinan-zhang-mbrl-cm.pdf">[Slides]</a>  </li>
+                      <li>Weinan Zhang (Shanghai Jiao Tong University)</li>
+                    </p>
+			
+                </div>
+            </div>
+                
+                
+            </div>
+        </div>
+
+    </section>
+    
+    <!--
+    <section id="section-papers" class="section-wrapper pricing-section gray-bg">
+        <div class="container">
+        	<div class="row">
+                <div class="col-md-12">
+                    <h1 class="section-title">ACCEPTED PAPERS <a href="Poster.pdf"><u>Poster Instruction</u></a></h1>
+                </div>
+            </div>
+		
+		<div class="row">
+              <div class="col-lg-2 text-left"></div>
+              
+            <div class="col-lg-10 text-left">
+                <div class="col-md-12">
+                    <p class="large text-muted">
+                      <li><b>Rel4KC: A Reinforcement Learning Agent for Knowledge Graph Completion and Validation</b> <a href="1.pdf">[PDF]</a></li>
+                      <li>Authors: Xiao Lin, Pero Subasic and Hongfeng Yin</li>
+                    </p>
+                    <p class="large text-muted">
+                      <li><b>From AlphaGo Zero to 2048</b> <a href="2.pdf">[PDF]</a></li>
+                      <li>Authors: Yulin Zhou</li>
+                    </p>
+                    <p class="large text-muted">
+                      <li><b>Horizon: Facebook’s Open Source Applied Reinforcement Learning Platform</b> <a href="3.pdf">[PDF]</a></li>
+                      <li>Authors: Edoardo Conti and Jason Gauci</li>
+                    </p>
+                    <p class="large text-muted">
+                      <li><b>Reinforcement Learning Driven Heuristic Optimization</b> <a href="4.pdf">[PDF]</a></li>
+                      <li>Authors: Qingpeng Cai, Will Hang, Azalia Mirhoseini, George Tucker, Jingtao Wang and Wei Wei</li>
+                    </p>
+                    <p class="large text-muted">
+                      <li><b>Deep Reinforcement Learning for List-wise Recommendations</b> <a href="https://arxiv.org/abs/1801.00209">[PDF]</a></li>
+                      <li>Authors: Xiangyu Zhao, Liang Zhang, Long Xia, Zhuoye Ding, Dawei Yin and Jiliang Tang</li>
+                    </p>
+                    <p class="large text-muted">
+                      <li><b>Deep Reinforcement Learning for Traffic Signal Control along Arterials</b> <a href="6.pdf">[PDF]</a></li>
+                      <li>Authors: Hua Wei, Chacha Chen, Kan Wu, Guanjie Zheng, Zhengyao Yu, Vikash Gayah and Zhenhui Jessie Li</li>
+                    </p>
+                    <p class="large text-muted">
+                      <li><b>Fair and Explainable Heavy-tailed Solutions of Option Prices through Reinforcement, Deep, and EM Learnings</b> <a href="9.pdf">[PDF]</a></li>
+                      <li>Authors: Chansoo Kim and Byoungseon Choi</li>
+                    </p>
+                    <p class="large text-muted">
+                      <li><b>CuSH: Cognitive ScHeduler for Heterogeneous High Performance Computing System</b> <a href="10.pdf">[PDF]</a></li>
+                      <li>Authors: Giacomo Domeniconi, Eun Kyung Lee and Alessandro Morari</li>
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    -->
+    
+    
+    
+    <section id="section-organizer" class="section-wrapper team">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h1>ORGANIZERS</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <figure class="thumbnail">
+                        <a href="http://wnzhang.net/"><img src="img/img-team-1.jpg" class="img-responsive" alt="Image"></a>
+                        <figcaption class="caption text-center">
+                            <h3>Weinan Zhang
+                                <small>Shanghai Jiao Tong University</small>
+                            </h3>
+                            <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- /.col-sm-6 --> 
+		    
+		<div class="col-sm-6 col-md-3">
+                    <figure class="thumbnail">
+                        <a href="http://www.cse.msu.edu/~zhaoxi35/"><img src="img/img-team-2.jpg" class="img-responsive" alt="Image"></a>
+                        <figcaption class="caption text-center">
+                            <h3>Xiangyu Zhao
+                                <small>City University of Hong Kong</small>
+                            </h3>
+                            <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- /.col-sm-6 -->
+		    
+		<div class="col-sm-6 col-md-3">
+                    <figure class="thumbnail">
+                        <a href="https://www.microsoft.com/en-us/research/people/lizo/"><img src="img/img-team-3.jpeg" class="img-responsive" alt="Image"></a>
+                        <figcaption class="caption text-center">
+                            <h3>Li Zhao
+                                <small>Microsoft Research Asia (MSRA)</small>
+                            </h3>
+                            <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- /.col-sm-6 -->
+
+                <div class="col-sm-6 col-md-3">
+                    <figure class="thumbnail">
+                        <a href="http://www.yindawei.com/"><img src="img/img-team-4.jpg" class="img-responsive" alt="Image"></a>
+                        <figcaption class="caption text-center">
+                            <h3>Dawei Yin
+                                <small>Baidu</small>
+                            </h3>
+                            <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- /.col-sm-6 -->
+
+            </div>
+            <!-- .row -->
+            
+            
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <figure class="thumbnail">
+                        <a href="http://infosense.cs.georgetown.edu/grace/"><img src="img/img-team-5.jpeg" class="img-responsive" alt="Image"></a>
+                        <figcaption class="caption text-center">
+                            <h3>Grace Hui Yang
+                                <small>Georgetown University</small>
+                            </h3>
+                            <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <!--<div class="col-sm-6 col-md-3">
+                    <figure class="thumbnail">
+                        <a href="http://alexbeutel.com/"><img src="img/img-team-6.jpg" class="img-responsive" alt="Image"></a>
+                        <figcaption class="caption text-center">
+                            <h3>Alex Beutel
+                                <small>Google Brain</small>
+                            </h3>
+                            <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>-->
+            </div>
+            <!-- .row -->
+            
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- .team  gray-bg -->
+	    
+    <!--<section id="section-sponsor" class="section-wrapper sponsor-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="section-title">SPONSOR</h1>
+                </div>
+            </div>
+		
+            <div class="row">
+                <div class="col-md-12">
+                    <figure class="thumbnail">
+                        <a href="http://polixir.ai/"><img src="img/sponsor-1.jpg" class="img-responsive" alt="Image"></a>
+                        <figcaption class="caption text-center">
+                            <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+	    </div>
+
+        </div>
+    </section>-->
+    
+    
+    <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=tt&d=neZ_Tj9zRrkZTaYEmprfMXDiZ7RpzyVnDfQoPNQGCAI"></script>
+
+    <footer class="footer">
+        <div class="copyright-section">
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="copytext text-center">Copyright &copy; 2018.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">Webpage Template</a></div>
+                </div>
+            </div>
+            <!-- .container -->
+        </div>
+        <!-- .copyright-section -->
+    </footer>
+    <!-- .footer -->
+
+</div>
+<!-- #main-wrapper -->
+
+
+
+	
+<!-- jquery -->
+<script src="js/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+
+<!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+<!---<script src="https://maps.googleapis.com/maps/api/js"></script>---> 
+
+<!--<script src="js/one-page-nav.js"></script>-->
+<script src="js/scripts.js"></script>
+</body>
+</html>
